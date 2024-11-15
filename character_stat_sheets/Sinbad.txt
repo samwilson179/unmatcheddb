@@ -1,0 +1,18 @@
+Sinbad
+
+2v2 Stats:
+Games Played: 3
+Winrate: 33.33%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Sawyer                   100.0%    1  
+Er                       0.0%      1  
+Kaj                      0.0%      1  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Player
+Player                   Winrate   GP 

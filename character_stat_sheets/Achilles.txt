@@ -1,0 +1,19 @@
+Achilles
+
+2v2 Stats:
+Games Played: 3
+Winrate: 66.67%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Sam                      100.0%    1  
+Jack                     100.0%    1  
+Matt                     0.0%      1  
+
+1v1 Stats:
+Games Played: 1
+Winrate: 100%
+
+Winrate by Player
+Player                   Winrate   GP 
+Matt                     100.0%    1  

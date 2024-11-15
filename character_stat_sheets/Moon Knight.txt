@@ -1,0 +1,17 @@
+Moon knight
+
+2v2 Stats:
+Games Played: 2
+Winrate: 50.0%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Carston                  100.0%    1  
+Christian                0.0%      1  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Player
+Player                   Winrate   GP 

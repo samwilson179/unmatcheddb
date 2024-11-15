@@ -1,0 +1,19 @@
+Beowulf
+
+2v2 Stats:
+Games Played: 1
+Winrate: 100.0%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Jack                     100.0%    1  
+
+1v1 Stats:
+Games Played: 3
+Winrate: 33%
+
+Winrate by Player
+Player                   Winrate   GP 
+Matt                     100.0%    1  
+Er                       0.0%      1  
+Shaggy                   0.0%      1  

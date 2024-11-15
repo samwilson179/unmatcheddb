@@ -1,0 +1,17 @@
+Angel
+
+2v2 Stats:
+Games Played: 1
+Winrate: 100.0%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Carston                  100.0%    1  
+
+1v1 Stats:
+Games Played: 2
+Winrate: 50%
+
+Winrate by Player
+Player                   Winrate   GP 
+Carston                  50.0%     2  

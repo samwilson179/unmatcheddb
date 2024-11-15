@@ -1,0 +1,17 @@
+Sun wukong
+
+2v2 Stats:
+Games Played: 1
+Winrate: 100.0%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Carston                  100.0%    1  
+
+1v1 Stats:
+Games Played: 1
+Winrate: 100%
+
+Winrate by Player
+Player                   Winrate   GP 
+Sam                      100.0%    1  

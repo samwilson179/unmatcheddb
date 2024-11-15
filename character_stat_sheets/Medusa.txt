@@ -1,0 +1,16 @@
+Medusa
+
+2v2 Stats:
+Games Played: 2
+Winrate: 100.0%
+
+Winrate by Player:
+Player                   Winrate   GP 
+Sam                      100.0%    2  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Player
+Player                   Winrate   GP 
