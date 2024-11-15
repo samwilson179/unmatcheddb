@@ -1,0 +1,23 @@
+Michael
+
+2v2 Stats:
+Elo: 978
+Games Played: 2
+Winrate: 50.0%
+
+Winrate by Character:
+Character                Winrate   GP 
+Ms. Marvel               100.0%    1  
+Alice                    0.0%      1  
+
+Winrate by Partner:
+Partner   Winrate   GP 
+Carston   100.0%    1  
+Matt      0.0%      1  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Character
+Character                Winrate   GP 

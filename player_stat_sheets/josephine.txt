@@ -1,0 +1,21 @@
+Josephine
+
+2v2 Stats:
+Elo: 970
+Games Played: 1
+Winrate: 0.0%
+
+Winrate by Character:
+Character                Winrate   GP 
+Dracula                  0.0%      1  
+
+Winrate by Partner:
+Partner   Winrate   GP 
+Carston   0.0%      1  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Character
+Character                Winrate   GP 

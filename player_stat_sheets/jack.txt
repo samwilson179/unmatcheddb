@@ -1,0 +1,24 @@
+Jack
+
+2v2 Stats:
+Elo: 1130
+Games Played: 3
+Winrate: 100.0%
+
+Winrate by Character:
+Character                Winrate   GP 
+Buffy                    100.0%    1  
+Beowulf                  100.0%    1  
+Achilles                 100.0%    1  
+
+Winrate by Partner:
+Partner   Winrate   GP 
+Matt      100.0%    1  
+Carston   100.0%    2  
+
+1v1 Stats:
+Games Played: 0
+Winrate: None
+
+Winrate by Character
+Character                Winrate   GP 

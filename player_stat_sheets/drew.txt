@@ -1,0 +1,22 @@
+Drew
+
+2v2 Stats:
+Elo: 944
+Games Played: 1
+Winrate: 0.0%
+
+Winrate by Character:
+Character                Winrate   GP 
+Golden Bat               0.0%      1  
+
+Winrate by Partner:
+Partner   Winrate   GP 
+Er        0.0%      1  
+
+1v1 Stats:
+Games Played: 1
+Winrate: 100%
+
+Winrate by Character
+Character                Winrate   GP 
+Dracula                  100.0%    1  
