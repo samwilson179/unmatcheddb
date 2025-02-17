@@ -141,8 +141,11 @@ def stats_update():
     g = open('players.txt','a')
     for player in players[1:]:
         g.write(player+'\n')
+    f.close()
+    g.close()
 
-    elo_dict = calculate_2elos(gamelist2,players)
+    elo_dict2 = calculate_2elos(gamelist2,players)
+    elo_dict1 = calculate_1elos(gamelist1,players)
 
     for player in players:
         ngames = 0
@@ -226,7 +229,7 @@ def stats_update():
             ptotal_sorted[key] = ptotal_dict[key]
             
         f = open('player_stat_sheets/'+player+'.txt','w')
-        f.write(f"{player.capitalize()}\n\n2v2 Stats:\nElo: {round(elo_dict[player])}\nGames Played: {ngames}\nWinrate: {winrate}\n\nWinrate by Character:\n")
+        f.write(f"{player.capitalize()}\n\n2v2 Stats:\nElo: {round(elo_dict2[player])}\nGames Played: {ngames}\nWinrate: {winrate}\n\nWinrate by Character:\n")
         f.write('{:<25}{:<10}{:<3}'.format('Character','Winrate','GP')+'\n')
         for char in reversed(char_sorted.keys()):
             f.write('{:<25}{:<10}{:<3}'.format(char,str(char_sorted[char])+'%',ctotal_sorted[char])+'\n')
@@ -234,10 +237,11 @@ def stats_update():
         f.write('{:<10}{:<10}{:<3}'.format('Partner','Winrate','GP')+'\n')
         for partner in reversed(partner_sorted.keys()):
             f.write('{:<10}{:<10}{:<3}'.format(partner.capitalize(),str(partner_sorted[partner])+'%',ptotal_sorted[partner])+'\n')
-        f.write(f'\n1v1 Stats:\nGames Played: {ngames1}\nWinrate: {winrate1}\n\nWinrate by Character\n')
+        f.write(f'\n1v1 Stats:\nElo: {round(elo_dict1[player])}\nGames Played: {ngames1}\nWinrate: {winrate1}\n\nWinrate by Character\n')
         f.write('{:<25}{:<10}{:<3}'.format('Character','Winrate','GP')+'\n')
         for char in reversed(char_sorted1.keys()):
             f.write('{:<25}{:<10}{:<3}'.format(char,str(char_sorted1[char])+'%',ctotal_sorted1[char])+'\n')
+        f.close()
 
     for character in characters:
         ngames = 0
@@ -300,7 +304,7 @@ def stats_update():
             ptotal_sorted1[key] = ptotal_dict1[key]
             
         f = open('character_stat_sheets/'+character+'.txt','w')
-        f.write(f"{character.capitalize()}\n\n2v2 Stats:\nGames Played: {ngames}\nWinrate: {winrate}\n\nWinrate by Player:\n")
+        f.write(f"{character.title()}\n\n2v2 Stats:\nGames Played: {ngames}\nWinrate: {winrate}\n\nWinrate by Player:\n")
         f.write('{:<25}{:<10}{:<3}'.format('Player','Winrate','GP')+'\n')
         for player in reversed(player_sorted.keys()):
             f.write('{:<25}{:<10}{:<3}'.format(player.capitalize(),str(player_sorted[player])+'%',ptotal_sorted[player])+'\n')
@@ -333,13 +337,24 @@ def calculate_2wars():
     for player in temp_dict.keys():
         war_dict[player] = round(temp_dict[player][0] - avg_rate * temp_dict[player][1],2)
     war_sorted = {k: v for k, v in sorted(war_dict.items(), key=lambda x: x[1])}
-    f = open('war_score.txt','w')
-    f.write('WAR Score ranking\nGiven the average win rate of all players:\n(Number of games won) - (Avg. win rate) * (Number of games played)\n\nPlayer WAR Scores:\n')
+    f = open('war_score2.txt','w')
+    f.write('2v2 WAR Score ranking\nGiven the average win rate of all players:\n(Number of games won) - (Avg. win rate) * (Number of games played)\n\nPlayer WAR Scores:\n')
     for player in reversed(war_sorted.keys()):
         if war_sorted[player] >= 0:
             f.write("{:<15}{:<5}".format(player,'+'+str(war_sorted[player]))+'\n')
         else:
             f.write("{:<15}{:<5}".format(player,war_sorted[player])+'\n')
+    f.close()
+    return
+
+def calculate_1wars():
+    temp_dict = {}
+    war_dict = {}
+    rates = []
+    directory = os.fsencode('player_stat_sheets')
+    for file in os.listdir(directory):
+        filename = os.fsdecode(file)
+        f = open('player_stat_sheets/'+filename,'r')
 
 def calculate_2elos(gamelist,players):
     elo_dict = {}
@@ -358,6 +373,19 @@ def calculate_2elos(gamelist,players):
         elo_dict[loser2] -= 100 * exw
     return elo_dict
 
+def calculate_1elos(gamelist,players):
+    elo_dict = {}
+    for player in players:
+        elo_dict[player] = 1000
+    
+    for game in gamelist:
+        winner = game[3]
+        loser = game[5]
+        exw = 1 / ( 1 + 10 ** ( 0.5 * ( elo_dict[loser] - elo_dict[winner] ) / 500 ) )
+        elo_dict[winner] += 100 * (1 - exw)
+        elo_dict[loser] -= 100 * exw
+    return elo_dict
+
 def main():
 
     query = input('Input new game? (y or n)')
@@ -365,6 +393,7 @@ def main():
         game_input()
     stats_update()
     calculate_2wars()
+    return
 
 if __name__ == '__main__':
     main()

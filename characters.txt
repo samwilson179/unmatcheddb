@@ -1,5 +1,6 @@
 Achilles
 Alice
+Ancient Leshen
 Angel
 Annie Christmas
 Beowulf
@@ -10,6 +11,7 @@ Bloody Mary
 Bruce Lee
 Buffy
 Bullseye
+Ciri
 Cloak & Dagger
 Daredevil
 Deadpool
@@ -17,6 +19,8 @@ Doctor Strange
 Dr. Sattler
 Dracula
 Elektra
+Eredin
+Geralt of Rivia
 Ghost Rider
 Golden Bat
 Hamlet
@@ -32,6 +36,7 @@ Moon Knight
 Ms. Marvel
 Nikola Tesla
 Oda Nobunaga
+Philippa
 Raptors
 Robert Muldoon
 Robin Hood
@@ -50,4 +55,5 @@ Titania
 Tomoe Gozen
 Willow
 Winter Soldier
+Yennefer & Triss
 Yennenga

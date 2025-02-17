@@ -1,13 +1,16 @@
 Azuchi Castle
 Baskerville Manor
+Fayrlund Forest
 Globe Theatre
 Hanging Gardens
 Helicarrier
 Hell's Kitchen
 Heorot
+Kaer Mohren
 King Solomon's Mine
 Marmoreal
-McMinnville OR
+McMinnville
+Naglfar
 Navy Pier
 Point Pleasant
 Raptor Paddock
@@ -15,6 +18,7 @@ Sanctum Sanctorum
 Sarpedon
 Sherwood Forest
 Soho
+Streets of Novigrad
 Sunnydale High
 The Bronze
 The Raft

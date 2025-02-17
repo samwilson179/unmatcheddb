@@ -1,0 +1,23 @@
+2v2 WAR Score ranking
+Given the average win rate of all players:
+(Number of games won) - (Avg. win rate) * (Number of games played)
+
+Player WAR Scores:
+Carston        +3.02
+Sam            +2.81
+Kail           +2.65
+Er             +1.74
+Jack           +1.55
+Katie          +1.03
+Ian            +0.55
+Shaggy         +0.52
+Sawyer         +0.03
+Michael        +0.03
+Caleb          +0.0 
+Peter          -0.38
+Josephine      -0.48
+Drew           -0.48
+Ted            -1.45
+Matt           -1.49
+Kaj            -1.66
+Christian      -4.01
